@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Pedro Henrique Gomes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">Pedro Henrique</a>
+      <nav id="nav">
+        <a href="index.html">Início</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="projetos.html" class="active">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-right">
+        <button class="small-btn" id="theme-toggle">Modo escuro</button>
+        <button class="small-btn" id="menu-toggle" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container titulo-pagina">
+      <h1>Projetos</h1>
+      <p>Projetos que fiz para praticar. Clique em "Detalhes" para ver mais.</p>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="projetos">
+
+          <div class="box projeto aparecer">
+            <div class="corpo">
+              <div class="num">PROJETO 01</div>
+              <h3>To-Do List</h3>
+              <div class="pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span></div>
+              <p>Lista de tarefas para treinar lógica de programação. Dá para adicionar, editar e excluir tarefas, e elas continuam salvas depois de atualizar a página.</p>
+            </div>
+            <div class="botoes">
+              <button class="btn" data-projeto="todo">Detalhes</button>
+              <a class="btn outline" href="https://github.com/pedr01311/to-do-list" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+
+          <div class="box projeto aparecer">
+            <div class="corpo">
+              <div class="num">PROJETO 02</div>
+              <h3>Tela de Login</h3>
+              <div class="pills"><span>Python</span><span>Flask</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+              <p>Sistema de cadastro e login de usuários, com os dados guardados em um banco MySQL e mensagens de aviso na tela.</p>
+            </div>
+            <div class="botoes">
+              <button class="btn" data-projeto="login">Detalhes</button>
+              <a class="btn outline" href="https://github.com/pedr01311/telaLogin" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+
+          <div class="box projeto aparecer">
+            <div class="corpo">
+              <div class="num">PROJETO 03</div>
+              <h3>Dashboard de Clima</h3>
+              <div class="pills"><span>Python</span><span>FastAPI</span><span>API REST</span><span>JavaScript</span></div>
+              <p>Mostra o clima de qualquer cidade. Uma API feita em FastAPI busca os dados na OpenWeather e a página exibe o resultado.</p>
+            </div>
+            <div class="botoes">
+              <button class="btn" data-projeto="weather">Detalhes</button>
+              <a class="btn outline" href="https://github.com/pedr01311/WeatherAPi" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="github-link">Os códigos estão no meu GitHub: <a href="https://github.com/pedr01311" target="_blank" rel="noopener">github.com/pedr01311</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" id="modal-overlay">
+    <div class="modal" id="modal-body"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="rodape">
+        <div>
+          <h4>Pedro Henrique Gomes</h4>
+          <p>Estudante de Técnico em Informática</p>
+          <p>Disponível no período da manhã</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="mailto:pedrohcifuentes0022@gmail.com">pedrohcifuentes0022@gmail.com</a></p>
+          <p><a href="https://wa.me/5531993981532" target="_blank" rel="noopener">WhatsApp: +55 31 99398-1532</a></p>
+          <p><a href="https://github.com/pedr01311" target="_blank" rel="noopener">github.com/pedr01311</a></p>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Pedro Henrique Gomes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

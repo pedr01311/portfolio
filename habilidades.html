@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidades - Pedro Henrique Gomes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">Pedro Henrique</a>
+      <nav id="nav">
+        <a href="index.html">Início</a>
+        <a href="habilidades.html" class="active">Habilidades</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-right">
+        <button class="small-btn" id="theme-toggle">Modo escuro</button>
+        <button class="small-btn" id="menu-toggle" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container titulo-pagina">
+      <h1>Habilidades</h1>
+      <p>O que eu já aprendi no curso e nos projetos que fiz.</p>
+    </div>
+
+    <section>
+      <div class="container conhecimentos">
+
+        <div class="box aparecer">
+          <h3>Desenvolvimento web</h3>
+          <ul>
+            <li><span>HTML</span><span class="nivel inter">Intermediário</span></li>
+            <li><span>CSS</span><span class="nivel inter">Intermediário</span></li>
+            <li><span>JavaScript</span><span class="nivel basico">Básico</span></li>
+          </ul>
+        </div>
+
+        <div class="box aparecer">
+          <h3>Programação e banco de dados</h3>
+          <ul>
+            <li><span>Lógica de programação</span><span class="nivel inter">Intermediário</span></li>
+            <li><span>Python</span><span class="nivel basico">Básico</span></li>
+            <li><span>MySQL</span><span class="nivel basico">Básico</span></li>
+            <li><span>C#</span><span class="nivel inicio">Iniciante</span></li>
+          </ul>
+        </div>
+
+        <div class="box aparecer">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li><span>Flask e FastAPI</span><span class="nivel basico">Básico</span></li>
+            <li><span>Consumo de APIs</span><span class="nivel basico">Básico</span></li>
+            <li><span>N8N (automação)</span><span class="nivel basico">Básico</span></li>
+            <li><span>Google Workspace</span><span class="nivel basico">Familiarizado</span></li>
+          </ul>
+        </div>
+
+        <div class="box aparecer">
+          <h3>Computação e idiomas</h3>
+          <ul>
+            <li><span>Hardware</span><span class="nivel basico">Curso técnico</span></li>
+            <li><span>Software</span><span class="nivel basico">Curso técnico</span></li>
+            <li><span>Inglês</span><span class="nivel inter">Intermediário</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="rodape">
+        <div>
+          <h4>Pedro Henrique Gomes</h4>
+          <p>Estudante de Técnico em Informática</p>
+          <p>Disponível no período da manhã</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="mailto:pedrohcifuentes0022@gmail.com">pedrohcifuentes0022@gmail.com</a></p>
+          <p><a href="https://wa.me/5531993981532" target="_blank" rel="noopener">WhatsApp: +55 31 99398-1532</a></p>
+          <p><a href="https://github.com/pedr01311" target="_blank" rel="noopener">github.com/pedr01311</a></p>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Pedro Henrique Gomes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

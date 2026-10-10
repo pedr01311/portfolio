@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Henrique Gomes - Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">Pedro Henrique</a>
+      <nav id="nav">
+        <a href="index.html" class="active">Início</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-right">
+        <button class="small-btn" id="theme-toggle">Modo escuro</button>
+        <button class="small-btn" id="menu-toggle" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <small>Olá, eu sou o</small>
+          <h1>Pedro Henrique Gomes</h1>
+          <p class="typing"><span id="typed"></span><span class="cursor"></span></p>
+          <p class="desc">
+            Estou fazendo o curso técnico de Informática e gosto de aprender fazendo projetos.
+            Neste site você encontra minhas habilidades, os projetos que já fiz e como falar comigo.
+          </p>
+          <div class="botoes">
+            <a class="btn" href="projetos.html">Ver meus projetos</a>
+            <a class="btn outline" href="contato.html">Entrar em contato</a>
+          </div>
+        </div>
+
+        <div class="ficha">
+          <dl>
+            <dt>Curso</dt>
+            <dd>Técnico em Informática</dd>
+            <dt>Escola</dt>
+            <dd>Colégio COTEMIG - Unidade Barroca</dd>
+            <dt>Procurando</dt>
+            <dd>Primeiro estágio em TI</dd>
+            <dt>Disponibilidade</dt>
+            <dd>Período da manhã</dd>
+            <dt>WhatsApp</dt>
+            <dd>+55 31 99398-1532</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container sobre aparecer">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou estudante do curso Técnico em Informática, onde venho desenvolvendo conhecimentos
+          em programação, hardware, redes, sistemas operacionais e suporte técnico.
+        </p>
+        <p>
+          Tenho interesse pela área de Tecnologia da Informação e gosto de aprender por meio de
+          projetos práticos e desafios que contribuam para o meu crescimento profissional. Ao longo
+          do curso, venho adquirindo experiência com desenvolvimento de software, manutenção de
+          computadores, banco de dados e fundamentos de infraestrutura.
+        </p>
+        <p>
+          Busco minha primeira oportunidade de estágio para ganhar experiência, aprender com
+          profissionais da área e desenvolver minhas habilidades em diferentes segmentos da tecnologia.
+        </p>
+        <p>
+          Me considero uma pessoa dedicada e persistente. Quando começo algo, gosto de ir até o fim
+          e melhorar aos poucos. Também valorizo o trabalho em grupo e acredito que aprender com
+          outras pessoas é uma das melhores formas de evoluir.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Meus objetivos</h2>
+        <p class="sub">O que eu quero para os próximos anos.</p>
+        <div class="objetivos">
+          <div class="box aparecer">
+            <h3>Primeiro estágio</h3>
+            <p>Conseguir minha primeira oportunidade de estágio para usar na prática o que aprendi no curso técnico.</p>
+          </div>
+          <div class="box aparecer">
+            <h3>Evolução técnica</h3>
+            <p>Melhorar minhas competências em TI, ganhando experiência em desenvolvimento de software, suporte técnico, infraestrutura e hardware.</p>
+          </div>
+          <div class="box aparecer">
+            <h3>Trabalho em equipe</h3>
+            <p>Trabalhar em grupo, aprender com desenvolvedores mais experientes e ajudar a resolver problemas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>Escolaridade</h2>
+        <div class="escola aparecer">
+          <h3>Técnico em Informática</h3>
+          <p>Colégio COTEMIG - Unidade Barroca</p>
+          <p>2ª série do Ensino Médio Técnico · em andamento · conclusão prevista para 2027</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="rodape">
+        <div>
+          <h4>Pedro Henrique Gomes</h4>
+          <p>Estudante de Técnico em Informática</p>
+          <p>Disponível no período da manhã</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="mailto:pedrohcifuentes0022@gmail.com">pedrohcifuentes0022@gmail.com</a></p>
+          <p><a href="https://wa.me/5531993981532" target="_blank" rel="noopener">WhatsApp: +55 31 99398-1532</a></p>
+          <p><a href="https://github.com/pedr01311" target="_blank" rel="noopener">github.com/pedr01311</a></p>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Pedro Henrique Gomes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

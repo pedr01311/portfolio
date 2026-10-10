@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Pedro Henrique Gomes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">Pedro Henrique</a>
+      <nav id="nav">
+        <a href="index.html">Início</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+      <div class="header-right">
+        <button class="small-btn" id="theme-toggle">Modo escuro</button>
+        <button class="small-btn" id="menu-toggle" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container titulo-pagina">
+      <h1>Contato</h1>
+      <p>Quer conversar? Preencha o formulário ou use os contatos ao lado.</p>
+    </div>
+
+    <section>
+      <div class="container contato">
+
+        <div class="box">
+          <h3>Contatos</h3>
+          <ul>
+            <li><small>E-mail</small><a href="mailto:pedrohcifuentes0022@gmail.com">pedrohcifuentes0022@gmail.com</a></li>
+            <li><small>WhatsApp</small><a href="https://wa.me/5531993981532" target="_blank" rel="noopener">+55 31 99398-1532</a></li>
+            <li><small>GitHub</small><a href="https://github.com/pedr01311" target="_blank" rel="noopener">github.com/pedr01311</a></li>
+            <li><small>Disponibilidade</small>Período da manhã</li>
+          </ul>
+        </div>
+
+        <form class="box" id="contact-form" novalidate>
+          <h3>Enviar mensagem</h3>
+
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+            <span class="msg-erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" inputmode="numeric">
+            <span class="msg-erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+            <span class="msg-erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" maxlength="500" placeholder="Escreva aqui..."></textarea>
+            <div class="contador" id="msg-counter">0 / 500</div>
+            <span class="msg-erro"></span>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" id="modal-overlay">
+    <div class="modal" id="modal-body"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="rodape">
+        <div>
+          <h4>Pedro Henrique Gomes</h4>
+          <p>Estudante de Técnico em Informática</p>
+          <p>Disponível no período da manhã</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="mailto:pedrohcifuentes0022@gmail.com">pedrohcifuentes0022@gmail.com</a></p>
+          <p><a href="https://wa.me/5531993981532" target="_blank" rel="noopener">WhatsApp: +55 31 99398-1532</a></p>
+          <p><a href="https://github.com/pedr01311" target="_blank" rel="noopener">github.com/pedr01311</a></p>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Pedro Henrique Gomes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
